@@ -1,29 +1,31 @@
 <template>
-  <v-app class="grey lighten-3">
-    <v-content>
-      <v-container>
-        <v-layout
+  <v-app class="yellow lighten-2" dark >
+    <v-content >    
+    <v-parallax src="https://i.pinimg.com/originals/75/2a/30/752a309d15fac0b23d006d9b568aff0d.gif" width="100%" >
+    <div class="fill-height bottom-gradient">
+      <v-container grid-list-md text-xs-center mt-5>
+        <v-layout class="justify-center" column align-center 
+          row align-center
           text-xs-center
-          wrap
         >
-          <v-flex mb-4>
-            <h1 class="display-2 font-weight-bold mb-3">
-              Crowdfunding
+          <v-flex fill-height mb-1 mt-5 >
+            <h1 class="display-4 font-weight-black mb-3 yellow--text text--lighten-3">
+              CROWDFUNDING
             </h1>
-            <p class="subheading font-weight-regular">
+            <p class="title font-weight-black lime--text text--lighten-4">
               Utilizing Ethereum for Decentralized Crowdfunding
             </p>
           </v-flex>
         </v-layout>
 
-        <v-layout row justify-center>
+        <v-layout row justify-center >
           <v-dialog v-model="startProjectDialog" max-width="600px" persistent>
-            <v-btn slot="activator" color="primary" dark>Start a Project</v-btn>
-            <v-card>
+            <v-btn round slot="activator" color="deep-purple accent-1" dark>Start a Project</v-btn>
+            <v-card class="deep-purple accent-1 " dark>
               <v-card-title>
-                <span class="headline font-weight-bold mt-2 ml-4">Bring your project to life</span>
+                <span class="headline font-weight-black mt-2 ml-4 orange--text text--lighten-3">Bring your project to life! ✨💫</span>
               </v-card-title>
-              <v-card-text class="pt-0">
+              <v-card-text class="pt-0 font-weight-black">
                 <v-container class="pt-0" grid-list-md>
                   <v-layout wrap>
                     <v-flex xs12>
@@ -62,13 +64,13 @@
               <v-card-actions>
                 <v-spacer></v-spacer>
                 <v-btn
-                  color="blue darken-1"
+                  color="orange lighten-3"
                   flat
                   @click="startProjectDialog = false;
                   newProject.isLoading = false;">
                   Close
                 </v-btn>
-                <v-btn color="blue darken-1"
+                <v-btn color="orange lighten-3"
                   flat
                   @click="startProject"
                   :loading="newProject.isLoading">
@@ -79,24 +81,28 @@
           </v-dialog>
         </v-layout>
       </v-container>
-
+      </div>
+      </v-parallax>
       <v-container
         grid-list-lg
       >
-        <h1 class="display-1 font-weight-bold mb-3">
-          Projects
+        <h1 class="display-1 teal--text text--darken-3 font-weight-bold text-xs-center mb-3">
+         👾 P R O J E C T S 👾
         </h1>
         <v-layout row wrap>
-          <v-flex v-for="(project, index) in projectData" :key="index" xs12>
+          <v-flex v-for="(project, index) in projectData" :key="index" xs12> 
+
+
+
             <v-dialog
               v-model="project.dialog"
               width="800"
             >
-              <v-card>
-                <v-card-title class="headline font-weight-bold">
+              <v-card >
+                <v-card-title class="headline font-weight-black">
                   {{ project.projectTitle }}
                 </v-card-title>
-                <v-card-text>
+                <v-card-text >
                   {{ project.projectDesc }}
                 </v-card-text>
                 <v-card-actions>
@@ -112,32 +118,32 @@
               </v-card>
             </v-dialog>
             <v-hover>
-              <v-card
+              <v-card 
                 slot-scope="{ hover }"
                 :class="`elevation-${hover ? 10 : 2}`"
               >
-                <v-card-title primary-title>
+                <v-card-title primary-title >
                   <div>
-                    <div class="headline font-weight-bold">
+                    <div class="headline deep-purple--text text--accent-1 font-weight-black">
                       <v-chip
-                        label
+                        pill
                         :color="stateMap[project.currentState].color"
-                        text-color="white" class="mt-0">
+                        text-color="orange lighten-3" class="mt-0">
                       {{ stateMap[project.currentState].text }}
                       </v-chip>
                       {{ project.projectTitle }}
                     </div>
                     <br/>
-                    <span>{{ project.projectDesc.substring(0, 100) }}</span>
+                    <span>🌼 {{ project.projectDesc.substring(0, 100) }}</span>
                     <span v-if="project.projectDesc.length > 100">
                       ... <a @click="projectData[index].dialog = true">[Show full]</a>
                     </span>
                     <br/><br/>
-                    <small>Up Until: <b>{{ new Date(project.deadline * 1000) }}</b></small>
+                    <span>⏳ Up Until: <b>{{ new Date(project.deadline * 1000) }}</b></span>
                     <br/><br/>
-                    <small>Goal of <b>{{ project.goalAmount / 10**18 }} ETH </b></small>
-                    <small v-if="project.currentState == 1">wasn't achieved before deadline</small>
-                    <small v-if="project.currentState == 2">has been achieved</small>
+                    <span>💰 Goal of <b>{{ project.goalAmount / 10**18 }} ETH </b></span>
+                    <span v-if="project.currentState == 1">wasn't achieved before deadline</span>
+                    <span v-if="project.currentState == 2">has been achieved</span>
                   </div>
                 </v-card-title>
                 <v-flex
@@ -152,9 +158,10 @@
                   ></v-text-field>
                   <v-btn
                     class="mt-3"
-                    color="light-blue darken-1 white--text"
+                    color="orange"
                     @click="fundProject(index)"
                     :loading="project.isLoading"
+                    outline
                   >
                     Fund
                   </v-btn>
@@ -171,7 +178,7 @@
                   </v-btn>
                 </v-flex>
                 <v-card-actions v-if="project.currentState == 0" class="text-xs-center">
-                  <span class="font-weight-bold" style="width: 200px;">
+                  <span class="font-weight-black" style="width: 200px;">
                     {{ project.currentAmount / 10**18 }} ETH
                   </span>
                   <v-progress-linear
@@ -186,8 +193,10 @@
               </v-card>
             </v-hover>
           </v-flex>
-        </v-layout>
+        </v-layout> 
+
       </v-container>
+
     </v-content>
   </v-app>
 </template>
