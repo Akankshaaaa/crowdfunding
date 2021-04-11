@@ -7,7 +7,7 @@ Medium article:
 https://medium.com/openberry/creating-a-simple-crowdfunding-dapp-with-ethereum-solidity-and-vue-js-69ddb8e132dd
 
 ![Crowdfunding](https://i.imgur.com/mmnPHLf.gif)
-![Screenshots](2021-04-11 at 9.26.21 PM.png)
+![Crowdfunding](https://github.com/Akankshaaaa/crowdfunding/blob/ab43a8503f374b30fc731341020e78d1a9aa6eac/Screenshots/Screenshot%202021-04-11%20at%209.26.21%20PM.png)
 
 ## Prerequisites
 
