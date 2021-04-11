@@ -1,7 +1,10 @@
 /* eslint-disable */
 import web3 from './web3';
 
-const address = '0x9fc1a2e85b3ae6b4b0a36146929f2c1a860689af';
+const address ='0x014d2dd495D75F805eCe7EC5f06118A2f5027417' // Your deployed contract's address goes here
+
+
+
 const abi = [
     {
         "anonymous": false,
