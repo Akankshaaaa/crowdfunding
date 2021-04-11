@@ -18,7 +18,7 @@ https://medium.com/openberry/creating-a-simple-crowdfunding-dapp-with-ethereum-s
 Clone this repo via to your local machine and install the dependencies by doing the following:
 
 ```bash
-git clone https://github.com/openberry-ac/crowdfunding.git
+git clone https://github.com/Akankshaaaa/crowdfunding.git
 cd crowdfunding
 npm install
 ```
@@ -29,15 +29,6 @@ Start the application in a development environment via:
 npm run serve
 ```
 
-### Boilerplate
-
-If it is only the boilerplate that you want to clone, do it via:
-
-```
-git clone https://github.com/openberry-ac/crowdfunding.git --branch boilerplate --single-branch
-```
-
-And then do the same following commands as shown above for starting the application, you should be all set by then.
 
 ## Built With
 
@@ -46,7 +37,7 @@ And then do the same following commands as shown above for starting the applicat
 * [Vuetify](https://vuetifyjs.com/en/) - Material Design Component Framework
 * [web3.js](https://github.com/ethereum/web3.js/) - Javascript library used to interact with the Ethereum blockchain 
 
-## openberry
+## forked from openberry
 
 Anyone can become a blockchain engineer!
 
