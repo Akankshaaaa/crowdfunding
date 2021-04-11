@@ -14,7 +14,9 @@ Add a project :
 View all the projects :
 ![Crowdfunding](https://github.com/Akankshaaaa/crowdfunding/blob/7704b1c146e3d8a0cbdfa960329b66b805096921/Screenshots/Screenshot%202021-04-11%20at%209.27.37%20PM.png)
 
-
+Fund a project :
+![Crowdfunding](https://github.com/Akankshaaaa/crowdfunding/blob/785316a7792bd5338e662724aa6bec987de98ebd/Screenshots/Screenshot%202021-04-11%20at%209.29.30%20PM.png)
+![Crowdfunding](https://github.com/Akankshaaaa/crowdfunding/blob/785316a7792bd5338e662724aa6bec987de98ebd/Screenshots/Screenshot%202021-04-11%20at%209.29.47%20PM.png)
 
 ## Prerequisites
 
