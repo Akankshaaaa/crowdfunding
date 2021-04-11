@@ -6,8 +6,12 @@ Medium article:
 
 https://medium.com/openberry/creating-a-simple-crowdfunding-dapp-with-ethereum-solidity-and-vue-js-69ddb8e132dd
 
-![Crowdfunding](https://i.imgur.com/mmnPHLf.gif)
 ![Crowdfunding](https://github.com/Akankshaaaa/crowdfunding/blob/ab43a8503f374b30fc731341020e78d1a9aa6eac/Screenshots/Screenshot%202021-04-11%20at%209.26.21%20PM.png)
+
+Add a project : 
+![Crowdfunding](https://github.com/Akankshaaaa/crowdfunding/blob/75c00a3b6f22a6f90abaf4ac152394d4aee0ec69/Screenshots/Screenshot%202021-04-11%20at%209.27.04%20PM.png)
+
+
 
 ## Prerequisites
 
@@ -38,7 +42,7 @@ npm run serve
 * [Vuetify](https://vuetifyjs.com/en/) - Material Design Component Framework
 * [web3.js](https://github.com/ethereum/web3.js/) - Javascript library used to interact with the Ethereum blockchain 
 
-## forked from openberry
+## Forked from openberry
 
 Anyone can become a blockchain engineer!
 
