@@ -11,6 +11,9 @@ https://medium.com/openberry/creating-a-simple-crowdfunding-dapp-with-ethereum-s
 Add a project : 
 ![Crowdfunding](https://github.com/Akankshaaaa/crowdfunding/blob/75c00a3b6f22a6f90abaf4ac152394d4aee0ec69/Screenshots/Screenshot%202021-04-11%20at%209.27.04%20PM.png)
 
+View all the projects :
+![Crowdfunding](https://github.com/Akankshaaaa/crowdfunding/blob/7704b1c146e3d8a0cbdfa960329b66b805096921/Screenshots/Screenshot%202021-04-11%20at%209.27.37%20PM.png)
+
 
 
 ## Prerequisites
